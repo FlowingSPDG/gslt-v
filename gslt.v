@@ -33,8 +33,8 @@ fn generate_gslt(key string, appid int, memo string){
 	}
 	// println(res.text)
 	gslt := json.decode(GenerateGsltResponse, res.text) or {
-    	eprintln('Failed to recode JSON...')
-    	return 
+		eprintln('Failed to recode JSON...')
+		return 
 	} 
 	println(gslt.response)
 }
